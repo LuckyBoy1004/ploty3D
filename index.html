@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .main {
+                display: inline-block;
+            }
+            .left_half {
+                width: 35%;
+                height: 80%;
+                display: inline-block;
+                float: left;
+            }
+            .right_half {
+                width: 60%;
+                height: 80%;
+                padding: 2px solid black;
+                display: inline-block;
+                float: right;
+            }
+            .bg_input {
+                width: 200px;
+                height: 20px;
+                margin-bottom: 20px;
+            }
+            text {
+                display: none;
+            }
+        </style>
+        <script src="./plotly-2.14.0.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="graph_3d" class="right_half">
+            </div>
+            <div id="section_data" class="left_half">
+                <div id="sub_section_data_input">
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div id="sub_section_data_view">
+            <table id="dataTable">
+                <tr>
+                    <th>No</th>
+                    <th>Position X</th>
+                    <th>Position Y</th>
+                    <th>Position Z</th>
+                    <th>Binary</th>
+                    <th>Point Size</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+        <!-- draw graph -->
+        <script src="./config.js"></script>
+        <script src="./graph.js"></script>
+    </body>
+</html>
